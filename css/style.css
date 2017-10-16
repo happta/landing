@@ -1,0 +1,368 @@
+/*=================== MASTER STYLESHEET =====================
+
+	Project     :	SALESMAN TEMPLATES
+	Version     :	1.0
+	Last Change : 	20/09/2017
+	Primary Use :   eBOOK
+	File Name   :   style.css
+    Author Name :   Pixel Speaks
+
+==============================================================*/
+/*=================== LAYOUT =================================
+
+	1. Global Style
+	2. Banner Section CSS
+	3. Menu Section CSS
+	4. Inside Section CSS
+	5. Learn Section CSS
+	6. About Author Section CSS
+	7. Reviews Section CSS
+	8. FAQs Section CSS
+	9. Footer Section CSS
+
+
+===================================================================*/
+/*==================== COLOR CODES =================================
+
+	Background         :#ffffff [white]
+	Template Color        :#1242a2 / #00d664 [Dark Blue / Green]
+	Main Heading Color :#333333 [Dark Gray]
+	Content Color      :#333333 [Dark Gray]
+	Button background  :#00d664 [Green]
+
+====================================================================*/
+/*===================== TYPOGRAPHY =================================
+
+	Heading   : font-family: 'Poppins', sans-serif;
+	Body      : font-family: 'Open Sans', sans-serif;
+	Logo      : font-family: 'Pacifico', cursive;;
+	Signature : font-family: 'Shadows Into Light', cursive;;
+
+=====================================================================*/
+
+/*==================== 1.Global Style =================================*/
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #333;
+
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+.mt2 {
+	margin-top: 20px;
+}
+.mt3 {
+	margin-top: 30px;
+}
+.mt5 {
+	margin-top: 50px;
+}
+.burger {
+	padding: 75px 0 100px;
+}
+.gutter {
+	padding: 0 100px;
+}
+.border-top {
+	border-top: 1px solid #ddd;
+}
+.no-border {
+	border: none !important;
+}
+.darkbg {
+	background-color: #eef3f9;
+}
+.tplbg {
+	background: #1242a2;
+}
+.white-text {
+	color: #fff;
+}
+.sub-title {
+	font-size: 16px;
+}
+.padded {
+	padding: 50px;
+}
+.btn-alpha {
+    background-color: #00d664;
+    border: medium none;
+    border-radius: 33px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 125px;
+    padding: 14px 38px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 999;
+    font-family: 'Poppins', sans-serif;
+}
+.btn-alpha:hover, .btn-alpha:focus {
+	background-color: #00d630;
+	color:#fff;
+}
+/*==================== 2. Banner Section CSS =================================*/
+.site-header {
+	min-height: 450px;
+	color:#fff;
+	padding-top: 100px;
+}
+.site-header p {
+	font-size: 20px;
+	opacity: 0.8;
+}
+.site-logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    display: block;
+}
+.site-header h1 {
+	font-size: 42px;
+	line-height: 56px;
+}
+.banner_book {
+    background: rgba(0, 0, 0, 0) url("../images/1.png") no-repeat scroll center 16% / 51% auto;
+}
+#ps-section-4{
+    margin-top: 1px;
+}
+/*==================== 3. Menu Section CSS =================================*/
+.site-menu {
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+	z-index: 99;
+}
+.site-menu ul {
+	padding: 0;
+	margin: 0;
+}
+.site-menu li {
+	list-style: none;
+	display: inline-block;
+}
+.site-menu li a {
+	padding: 24px 16px;
+	display: block;
+	color: #000;
+	position: relative;
+	font-weight: 600;
+}
+.site-menu .active {
+    color: #5aa1e3;
+}
+.site-menu .active:after {
+    background: #5aa1e3 none repeat scroll 0 0;
+    border-radius: 20px;
+    bottom: -3px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.site-menu.is-fixed {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.has-top-margin {
+	margin-top: 70px;
+}
+
+/*==================== 4. Inside Section CSS =================================*/
+.inside-block {
+	padding: 50px 50px 0;
+}
+.inside-block h4 {
+	margin-top: 30px;
+}
+/*==================== 5. Learn Section CSS =================================*/
+.mobile_ebook{
+ background: rgba(0, 0, 0, 0) url("../images/3ipad2.png") no-repeat scroll 0 0;
+ background-size: 100%;
+ display: inline-block;
+}
+.bullets {
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+}
+.bullets li {
+	margin-bottom: 15px;
+	list-style: none;
+	background-image: url('../images/checked.png');
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	background-size: 19px;
+	background-position: 0 3px;
+}
+/*==================== 6. About Author Section CSS =================================*/
+.author-img {
+	position: relative;
+	margin: 40px;
+}
+.author-img::before {
+    border: 4px solid #00d664;
+    content: "";
+    height: 100%;
+    left: 0;
+    margin-left: 40px;
+    margin-top: -40px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.author-img::after {
+    border: 4px solid #00d664;
+    content: "";
+    height: 100%;
+    left: 0;
+    margin-left: 20px;
+    margin-top: -20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.signature {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 24px;
+}
+/*==================== 7. Reviews Section CSS =================================*/
+.line-heading {
+    margin: 10px auto 20px;
+    position: relative;
+    width: 50%;
+}
+.line-heading::before {
+    border-bottom: 2px solid #000;
+    content: "";
+    display: block;
+    left: 15px;
+    margin-top: -1.5px;
+    position: absolute;
+    right: 15px;
+    top: 45%;
+}
+.line-heading span{
+    background-color: #fff;
+    color: #333;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding: 0 20px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.quote-text {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 33px;
+    font-family: 'Poppins', sans-serif;
+}
+.review-author {
+    display: table;
+    margin: 20px auto;
+}
+.review-author img, .review-author p {
+    display: table-cell;
+    vertical-align: middle;
+}
+.review-author img {
+    margin-right: 20px;
+}
+#reviews .item {
+    min-height: 315px;
+}
+#reviews .carousel-indicators {
+	bottom: -50px;
+}
+#reviews .carousel-indicators li {
+	background-color: #ddd;
+	border-color: #ddd;
+}
+#reviews .carousel-indicators .active {
+	background-color: #00d630;
+	border-color: #00d630;
+}
+/*==================== 8. FAQs Section CSS =================================*/
+#faqs .accordion {
+	margin-top: 50px;
+}
+#faqs .accordion-toggle {
+	border-top: 1px solid #cccccc;
+	cursor: pointer;
+	margin: 0;
+	padding: 20px 0;
+	position: relative;
+	font-size: 15px;
+}
+#faqs .accordion-toggle.active:after {
+	content:"\f068";
+	position:absolute;
+	right:0;top:17px;
+	font-family: FontAwesome;
+	font-size: 16px;
+	font-weight: normal;
+}
+#faqs .accordion-toggle:before {
+	content:"\f067";
+	position:absolute;
+	right:0;top:17px;
+	font-family: FontAwesome;
+	font-size: 16px;
+	font-weight: normal;
+}
+#faqs .accordion-toggle.active:before {
+	display:none;
+}
+#faqs .accordion-content {
+	display: none;
+}
+#faqs .accordion-toggle.active {
+	color: #5aa1e3;
+}
+/*==================== 9. Footer Section CSS =================================*/
+.site-footer {
+	padding: 50px 0;
+}
+.social-icons {
+	padding: 0;
+	margin: 0;
+}
+.social-icons li {
+	list-style: none;
+	display: inline-block;
+	margin:10px;
+}
+
+/* ==== Custom */
+
+.logotype {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: roboto;
+}
+
+.reverse-button, .reverse-button:hover {
+  color: #00d664;
+  background-color: #fff;
+}

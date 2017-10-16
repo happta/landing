@@ -1,0 +1,225 @@
+/*for small mobile device (iphone-4) */
+@media (max-width: 360px) {
+	.inside-block, .padded {
+    padding: 25px 50px;
+	}
+	#intro-tagline::before{
+		top: 86.5%;
+	}	
+	.ps-btn, .ps-btn.is-hidden.slide-in, .ps-btn.is-hidden{
+		
+	}
+}	
+@media (max-width: 640px) {
+	.site-header img, .mobile_ebook{
+	    margin: 40px auto 0;
+	}
+	.has-top-margin {
+		margin-top: 0;
+	}
+
+}
+
+@media  (min-width: 480px) and (max-width: 640px) {
+	.site-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	}
+	#intro-tagline::before{
+		top: 78.5% !important;
+	}	
+	
+}
+@media (min-width: 480px) and (max-width: 767px) {	
+.banner_book {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+	}
+	.mobile_ebook {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+	}
+}
+/*for mobile device (till rotate view) */
+@media (max-width: 767px) {	
+	.site-header{
+		padding-top: 0;
+	}
+	.site-header h1 {
+    font-size: 28px;
+    line-height: 40px;
+	}
+	.site-header p {
+    font-size: 17px;
+ 	}
+}
+@media (min-width: 640px) and (max-width: 991px) {
+.author-img {
+    display: block;
+    margin: 40px auto;
+    position: relative;
+    width: 45%;
+	}
+}	
+@media (max-width: 991px) {
+	.burger {
+    padding: 50px 0;
+	}
+.gutter{
+	padding: 0px;
+	}
+	.inside-block {
+    padding: 50px 0 0;
+    text-align: center;
+	}
+	.padded{
+		padding: 0;
+	}
+	.quote-text{
+		font-size: 17px;
+		line-height: 26px;
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1024px){
+	.author-img{
+		margin: 40px 0 0;		
+	}
+}
+@media(min-width: 768px) and (max-width: 1024px){
+	.site-header img{
+		margin-top: 120px;
+	}
+.site-header h1 {
+    font-size: 30px;
+    line-height: 42px;
+}	
+.site-header p {
+    font-size: 17px;
+ }
+ .site-header{
+ 	padding-top: 50px;
+ }
+}
+
+@media (min-width: 1024px){
+	.site-menu-trigger{
+		display: none;
+	}
+	.ps-btn.is-hidden{
+		top: 0;
+	}
+	.ps-btn.is-hidden.slide-in {
+    opacity: 1;
+    right: 5%;
+}
+.ps-btn.is-hidden {
+    margin: 14px 0 0;
+    opacity: 0;
+    padding: 0.8em 2.2em;
+    position: fixed;
+    right: -20%;
+    top: 0;
+    transition: right 0.3s ease 0s, opacity 0.3s ease 0s;
+	}
+}
+
+@media (max-width: 1023px){
+  .site-menu li a{
+    padding: 2vh 4vh;
+  }
+	.site-menu li:first-child {
+    border-bottom: 1px solid #424242;
+	}
+	.site-menu .btn-alpha {
+	    margin: 17px 12px;
+	    padding: 12px 30px;
+	}
+	.site-menu .active::after{
+		display: none;
+	}
+	.site-menu ul a{
+		color: #fff;
+		  border-bottom: 1px solid #424242;
+	}
+	.site-menu ul {
+    background: rgba(3, 13, 24, 0.96) ;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    position: fixed;
+    right: 4%;
+    z-index: 9;
+    width: 90%;
+    transform: scale(0);
+    transform-origin: 100% 100% 0;
+    transition: transform 0.3s ease 0s, visibility 0s ease 0.3s;
+	}
+	.site-menu ul.is-visible{
+		transform: scale(1);
+	}
+	.site-menu-trigger {
+    bottom: 10px;
+    position: fixed;
+	background: rgba(3, 13, 24, 0.96) none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 44px;
+    overflow: hidden;
+    position: fixed;
+    right: 4%;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 44px;
+     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.8);
+    z-index: 99;
+	}
+	.site-menu-trigger span {
+    background: rgba(240, 238, 225, 0) none repeat scroll 0 0;
+    bottom: auto;
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    right: auto;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: background 0.3s ease 0s;
+    width: 20px;
+}
+.site-menu-trigger span::before, .site-menu-trigger span::after {
+  content: '';
+  position: absolute;
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  background: #f0eee1;
+  top: 0;
+  left: 0;
+  transition: transform ease 0.3s;
+}
+.site-menu-trigger span::before {
+  transform: rotate(91deg);
+}
+.site-menu-trigger span::after {
+  transform: rotate(0);
+}
+.site-menu-trigger.menu-is-open {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.site-menu-trigger span::before, .site-menu-trigger span::after {
+  
+}
+.site-menu-trigger.menu-is-open span::before {
+  transform: rotate(135deg);
+}
+.site-menu-trigger.menu-is-open span::after {
+  transform: rotate(225deg);
+}
+}
